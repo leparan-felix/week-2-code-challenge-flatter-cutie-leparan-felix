@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const baseUrl = "http://localhost:3000/characters";
+    const baseUrl = "http://localhost:5000/characters";
     const characterBar = document.getElementById("character-bar");
     const detailedInfo = document.getElementById("detailed-info");
     const nameElement = document.getElementById("name");
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
    
+        
     function displayCharacter(character) {
         nameElement.textContent = character.name;
         imageElement.src = character.image;
